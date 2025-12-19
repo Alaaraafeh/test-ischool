@@ -4,5 +4,8 @@ module.exports = {
     "^.+\\.(js|jsx)$": "babel-jest"
   },
   moduleFileExtensions: ["js", "jsx"],
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"]
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
+  collectCoverage: true,
+  coverageDirectory:'coverage',
+  coverageReporters:['json', 'html', 'text-summary', 'lcov']
 };
